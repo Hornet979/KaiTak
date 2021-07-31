@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- VHXX Custom Approach Light Set                                -->
+<!-- this is basically Oliver Thurau's LOWI lights(v0.80 - 2011.01.06) with adapted positions -->
+<!-- RWY 13 Curved Approach lights -->
+<!-- 114.192226617426  22.3252619522094 -->
+<nasal>
+    <load>
+        if (!getprop("/scenery/VHXX/r13_app_flash/light-number")) {
+            print("setting FLASH COUNTER");
+            var loop_id = 0;
+            var flash_count = 0;
+
+            var loop = func(id) {
+                id == loop_id or return;
+
+                var flash_num = (flash_count += 1);
+                #print ("flash_num  ", flash_num);
+
+                setprop("/scenery/VHXX/r13_app_flash/light-number", flash_num);
+
+                if (flash_num == 22){
+                flash_count = 0;
+                #print("resetting FLASH COUNTER");
+                };
+
+            settimer(func { loop(id) }, 0.025);
+            }
+            loop(loop_id += 1);
+        } else {
+            print("FLASH VHXX already running");
+        };
+    </load>
+
+    <unload>
+        loop_id -= 1
+        print ("UNLOAD called");
+    </unload>
+
+</nasal>
+
+
+<!-- From Treshhold at x-m 0  -->
+
+<!-- Approach Light - 04 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -1187.834229673 </x-m>
+    <y-m> 781.282986843 </y-m>
+    <z-m> 26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 175 </heading-deg>
+  </offsets>
+</model>
+
+  <!-- LOD -->
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>20000</max-m>
+  </animation>
+
+
+</PropertyList>

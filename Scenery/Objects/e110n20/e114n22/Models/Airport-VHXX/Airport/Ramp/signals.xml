@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<PropertyList>
+	
+<!-- 
+The following hand positions can be defined -
+
+	>> Shoulder Joint
+	> left-arm-x			right-arm-x
+	> left-arm-y			right-arm-y
+	> left-arm-z			right-arm-z
+	
+	>> Elbow Joint
+	> left-arm-outer-x		right-arm-outer-x
+	
+	>> Hand-forearm Joint
+	> left-hand-x			left-hand-x
+	> left-hand-y			left-hand-y
+	> left-hand-z			left-hand-z
+
+-->
+	
+<positions>
+	<position>
+		<name>rest</name>
+		<left-arm-x>80</left-arm-x>
+		<right-arm-x>-80</right-arm-x>
+	</position>
+	<position>
+		<name>stop</name>
+		<left-arm-x>-55</left-arm-x>
+		<left-arm-outer-x>-70</left-arm-outer-x>
+		<right-arm-x>55</right-arm-x>
+		<right-arm-outer-x>70</right-arm-outer-x>
+	</position>
+	<position>
+		<name>fwd_out</name>
+		<left-arm-z>-50</left-arm-z>
+		<left-arm-outer-x>-30</left-arm-outer-x>
+		<right-arm-z>50</right-arm-z>
+		<right-arm-outer-x>30</right-arm-outer-x>
+	</position>
+	<position>
+		<name>fwd_in</name>
+		<left-arm-z>-50</left-arm-z>
+		<left-arm-outer-x>-120</left-arm-outer-x>
+		<right-arm-z>50</right-arm-z>
+		<right-arm-outer-x>120</right-arm-outer-x>
+	</position>
+	<position>
+		<name>left_in</name>
+		<left-arm-outer-x>-120</left-arm-outer-x>
+	</position>
+	<position>
+		<name>left_out</name>
+		<left-arm-outer-x>-30</left-arm-outer-x>
+	</position>
+	<position>
+		<name>right_in</name>
+		<right-arm-outer-x>120</right-arm-outer-x>
+	</position>
+	<position>
+		<name>right_out</name>
+		<right-arm-outer-x>30</right-arm-outer-x>
+	</position>
+	<position>
+		<name>all_clear</name>
+		<left-arm-x>80</left-arm-x>
+		<right-arm-x>45</right-arm-x>
+		<right-arm-outer-x>25</right-arm-outer-x>
+	</position>
+</positions>
+
+<!-- 
+Signal animations can be specified in 'steps' (using hand positions defined above)
+or a 'nasal' script that will run when the signal is active 
+ 
+types 		>	steps		nasal
+actions 	>	wait-time	wait-cond	animate		hold-pos	jump-to
+
+NOTE that the nasal type is not yet available
+-->
+
+<signals>
+	<signal>
+		<name>rest</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>rest</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>hold-pos</action>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>slow_stop</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>rest</position>
+				<speed>140</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>stop</position>
+				<speed>60</speed>
+			</step>
+			<step>
+				<action>wait-time</action>
+				<time-sec>3</time-sec>
+			</step>
+			<step>
+				<action>wait-cond</action>
+				<condition>
+					<less-than-equals>
+						<property>/velocities/groundspeed-kt</property>
+						<value>1</value>
+					</less-than-equals>
+				</condition>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>all_clear</position>
+				<speed>120</speed>
+			</step>
+			<step>
+				<action>wait-time</action>
+				<time-sec>3</time-sec>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>rest</position>
+				<speed>120</speed>
+			</step>
+			<step>
+				<action>hold-pos</action>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>imm_stop</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>stop</position>
+				<speed>240</speed>
+			</step>
+			<step>
+				<action>wait-cond</action>
+				<condition>
+					<less-than-equals>
+						<property>/velocities/groundspeed-kt</property>
+						<value>1</value>
+					</less-than-equals>
+				</condition>
+			</step>
+			<step>
+				<action>wait-time</action>
+				<time-sec>3</time-sec>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>all_clear</position>
+				<speed>120</speed>
+			</step>
+			<step>
+				<action>wait-time</action>
+				<time-sec>3</time-sec>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>rest</position>
+				<speed>120</speed>
+			</step>
+			<step>
+				<action>hold-pos</action>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>move_fwd</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>fwd_in</position>
+				<speed>140</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>fwd_out</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>fwd_in</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>jump-to</action>
+				<step>1</step>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>turn_left</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>left_in</position>
+				<speed>140</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>left_out</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>left_in</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>jump-to</action>
+				<step>1</step>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>turn_right</name>
+		<type>steps</type>
+		<steps>
+			<step>
+				<action>animate</action>
+				<position>right_in</position>
+				<speed>140</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>right_out</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>animate</action>
+				<position>right_in</position>
+				<speed>80</speed>
+			</step>
+			<step>
+				<action>jump-to</action>
+				<step>1</step>
+			</step>
+		</steps>
+	</signal>
+	<signal>
+		<name>eng_start</name>
+		<type>nasal</type>
+		<script><![CDATA[
+			var DEG2RAD = 0.0174532925;
+			
+			var activeRamp = getprop("/airports/active-ramp");
+	
+			var ramp_tree = "/airports/"~ramp_marshall.closestAirport()~"/ramps/ramp["~activeRamp~"]/";
+			
+			var startPos = ramp_marshall.rmPos.new(lA_x:-10, lAO_x:-30, rAO_x:40, rA_y:0);
+			
+			var phase = getprop("/airports/ramp-marshall/scripts/eng_start/phase");
+			
+			var radius = 40;
+			
+			if(phase == nil) {
+				setprop("/airports/ramp-marshall/scripts/eng_start/phase", 0);
+				phase = 0;
+			}
+			
+			if(phase == 0) {
+				if(!ramp_marshall.check_pos(ramp_tree, startPos)) {
+					ramp_marshall.full_animate(ramp_tree, startPos, 120);
+				}
+				if(ramp_marshall.check_pos(ramp_tree, startPos)) {
+					phase == 1;
+					setprop("/airports/ramp-marshall/scripts/eng_start/phase", 1);
+				}
+			} else {
+			
+				var theta = getprop("/airports/ramp-marshall/scripts/eng_start/theta");
+			
+				if(theta == nil) {
+					setprop("/airports/ramp-marshall/scripts/eng_start/theta", 0);
+					theta = 180;
+				}
+				
+				var x = radius * math.cos(theta * DEG2RAD);
+				var y = radius * math.sin(theta * DEG2RAD);
+				
+				setprop(ramp_tree~"right-arm-outer-x", 80+x);
+				setprop(ramp_tree~"right-arm-y", y);
+				
+				var delta_sec = getprop("/sim/time/delta-sec");
+				
+				if (theta < 360 - (220 * delta_sec)) {
+					setprop("/airports/ramp-marshall/scripts/eng_start/theta", theta + (220 * delta_sec));
+				} else {
+					setprop("/airports/ramp-marshall/scripts/eng_start/theta", geo.normdeg(theta + (220 * delta_sec)));
+				}
+			}
+			]]>
+		</script>
+	</signal>
+</signals>
+</PropertyList>

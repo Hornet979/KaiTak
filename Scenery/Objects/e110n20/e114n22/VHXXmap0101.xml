@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<PropertyList>
+<path>VHXXmap0101.ac</path>
+<animation>
+  <object-name>surface</object-name>
+
+  <enable-hot type="bool">false</enable-hot>
+  <type>select</type>
+  <condition>
+    <greater-than>		
+      <property>/scenery/osm2city/lightmap-factor</property>
+      <value>0.01</value>
+    </greater-than>
+  </condition>      
+</animation>
+
+</PropertyList>

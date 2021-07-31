@@ -1,0 +1,504 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<!-- VHXX Custom Approach Light Set                                -->
+<!-- this is basically Oliver Thurau's LOWI lights(v0.80 - 2011.01.06) with adapted positions -->
+<!-- RWY 13 Curved Approach lights -->
+<!-- 114.192226617426  22.3252619522094 -->
+<nasal>
+    <load>
+        if (!getprop("/scenery/VHXX/r13_app_flash/light-number")) {
+            print("setting FLASH COUNTER");
+            var loop_id = 0;
+            var flash_count = 0;
+
+            var loop = func(id) {
+                id == loop_id or return;
+
+                var flash_num = (flash_count += 1);
+                #print ("flash_num  ", flash_num);
+
+                setprop("/scenery/VHXX/r13_app_flash/light-number", flash_num);
+
+                if (flash_num == 22){
+                flash_count = 0;
+                #print("resetting FLASH COUNTER");
+                };
+
+            settimer(func { loop(id) }, 0.025);
+            }
+            loop(loop_id += 1);
+        } else {
+            print("FLASH VHXX already running");
+        };
+    </load>
+
+    <unload>
+        loop_id -= 1
+        print ("UNLOAD called");
+    </unload>
+
+</nasal>
+
+
+<!-- From Treshhold at x-m 0  -->
+<!-- Approach Light - 01 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -2067.27891406 </x-m>
+    <y-m> 759.395704303 </y-m>
+    <z-m> 26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 180 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 04 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -1187.834229673 </x-m>
+    <y-m> 781.282986843 </y-m>
+    <z-m> 26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 175 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_04.xml</path>
+  <offsets>
+    <x-m> -1187.834229673 </x-m>
+    <y-m> 781.282986843 </y-m>
+    <z-m> 44.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 175 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 05 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -1067.243699199 </x-m>
+    <y-m> 762.421365213 </y-m>
+    <z-m> 26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 167 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_05.xml</path>
+  <offsets>
+    <x-m> -1067.243699199 </x-m>
+    <y-m> 762.421365213 </y-m>
+    <z-m> 44.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 167 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 06 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -950.339352081 </x-m>
+    <y-m> 726.842869553 </y-m>
+    <z-m> 22 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 161 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_06.xml</path>
+  <offsets>
+    <x-m> -950.339352081 </x-m>
+    <y-m> 726.842869553 </y-m>
+    <z-m> 40.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 161 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 07 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -836.999290723 </x-m>
+    <y-m> 685.020941463 </y-m>
+    <z-m> 18 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 157 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_07.xml</path>
+  <offsets>
+    <x-m> -836.999290723 </x-m>
+    <y-m> 685.020941463 </y-m>
+    <z-m> 36.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 157 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 08 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -714.785409306 </x-m>
+    <y-m> 625.637632793 </y-m>
+    <z-m> 14 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 153 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_08.xml</path>
+  <offsets>
+    <x-m> -714.785409306 </x-m>
+    <y-m> 625.637632793 </y-m>
+    <z-m> 32.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 153 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 09 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -606.52799018 </x-m>
+    <y-m> 567.115083683 </y-m>
+    <z-m> 10 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 147 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_09.xml</path>
+  <offsets>
+    <x-m> -606.52799018 </x-m>
+    <y-m> 567.115083683 </y-m>
+    <z-m> 28.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 147 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 10 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -504.11645479 </x-m>
+    <y-m> 486.314204553 </y-m>
+    <z-m> 6 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 140 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_10.xml</path>
+  <offsets>
+    <x-m> -504.11645479 </x-m>
+    <y-m> 486.314204553 </y-m>
+    <z-m> 24.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 140 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 11 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -383.82725518 </x-m>
+    <y-m> 381.562235283 </y-m>
+    <z-m> 2 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 138 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_11.xml</path>
+  <offsets>
+    <x-m> -383.82725518 </x-m>
+    <y-m> 381.562235283 </y-m>
+    <z-m> 20.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 138 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 12 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -342.823763816 </x-m>
+    <y-m> 340.5822132692 </y-m>
+    <z-m> -2 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_12.xml</path>
+  <offsets>
+    <x-m> -342.823763816 </x-m>
+    <y-m> 340.5822132692 </y-m>
+    <z-m> 16.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 13 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -301.820272452 </x-m>
+    <y-m> 299.6021912554 </y-m>
+    <z-m> -6 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_13.xml</path>
+  <offsets>
+    <x-m> -301.820272452 </x-m>
+    <y-m> 299.6021912554 </y-m>
+    <z-m> 12.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 14 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -260.816781088 </x-m>
+    <y-m> 258.6221692416 </y-m>
+    <z-m> -10 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_14.xml</path>
+  <offsets>
+    <x-m> -260.816781088 </x-m>
+    <y-m> 258.6221692416 </y-m>
+    <z-m> 8.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 15 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -219.813289724 </x-m>
+    <y-m> 217.6421472278 </y-m>
+    <z-m> -14 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_15.xml</path>
+  <offsets>
+    <x-m> -219.813289724 </x-m>
+    <y-m> 217.6421472278 </y-m>
+    <z-m> 4.4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 16 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -178.80979836 </x-m>
+    <y-m> 176.662125214 </y-m>
+    <z-m> -18 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_16.xml</path>
+  <offsets>
+    <x-m> -178.80979836 </x-m>
+    <y-m> 176.662125214 </y-m>
+    <z-m> .4 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 17 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -153.2655414514 </x-m>
+    <y-m> 151.4246787549 </y-m>
+    <z-m> -22 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_17.xml</path>
+  <offsets>
+    <x-m> -153.2655414514 </x-m>
+    <y-m> 151.4246787549 </y-m>
+    <z-m> -3.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 18 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -127.7212845429 </x-m>
+    <y-m> 126.1872322957 </y-m>
+    <z-m> -26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_18.xml</path>
+  <offsets>
+    <x-m> -127.7212845429 </x-m>
+    <y-m> 126.1872322957 </y-m>
+    <z-m> -7.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 19 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -102.1770276343 </x-m>
+    <y-m> 100.9497858366 </y-m>
+    <z-m> -26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_19.xml</path>
+  <offsets>
+    <x-m> -102.1770276343 </x-m>
+    <y-m> 100.9497858366 </y-m>
+    <z-m> -7.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 20 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -76.6327707257 </x-m>
+    <y-m> 75.7123393774 </y-m>
+    <z-m> -26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_20.xml</path>
+  <offsets>
+    <x-m> -76.6327707257 </x-m>
+    <y-m> 75.7123393774 </y-m>
+    <z-m> -7.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 21 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -51.0885138171 </x-m>
+    <y-m> 50.4748929183 </y-m>
+    <z-m> -26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_21.xml</path>
+  <offsets>
+    <x-m> -51.0885138171 </x-m>
+    <y-m> 50.4748929183 </y-m>
+    <z-m> -7.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<!-- Approach Light - 22 -->
+<model>
+  <path>LOWI_app_light_poles_high.ac</path>
+  <offsets>
+    <x-m> -25.5442569086 </x-m>
+    <y-m> 25.2374464591 </y-m>
+    <z-m> -26 </z-m>
+    <pitch-deg> 0.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+<model>
+  <path>VHXX_r13_strobe_22.xml</path>
+  <offsets>
+    <x-m> -25.5442569086 </x-m>
+    <y-m> 25.2374464591 </y-m>
+    <z-m> -7.6 </z-m>
+    <pitch-deg>-7.00</pitch-deg>
+    <heading-deg> 135 </heading-deg>
+  </offsets>
+</model>
+
+
+  <!-- LOD -->
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>20000</max-m>
+  </animation>
+
+
+</PropertyList>

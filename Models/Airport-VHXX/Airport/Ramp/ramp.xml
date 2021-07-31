@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PropertyList>
+
+	<path>ramp.ac</path>
+	
+	<animation>
+		<object-name>left-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-arm-z" />
+		<center>
+			<x-m>20</x-m>
+			<y-m>-0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-arm-z" />
+		<center>
+			<x-m>20</x-m>
+			<y-m>0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-arm-x" />
+		<center>
+			<x-m>0</x-m>
+			<y-m>-0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-arm-x" />
+		<center>
+			<x-m>0</x-m>
+			<y-m>0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-arm-y" />
+		<center>
+			<x-m>20</x-m>
+			<y-m>-0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<y>1</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-arm</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-arm-y" />
+		<center>
+			<x-m>20</x-m>
+			<y-m>0.1680</y-m>
+			<z-m>1.4284</z-m>
+		</center>
+		<axis>
+			<y>1</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-arm-outer</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-arm-outer-x" />
+		<center>
+			<x-m>0</x-m>
+			<y-m>-0.436</y-m>
+			<z-m>1.43</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-arm-outer</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-arm-outer-x" />
+		<center>
+			<x-m>0</x-m>
+			<y-m>0.436</y-m>
+			<z-m>1.43</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-hand-z" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>-0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-hand-z" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<z>1</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-hand-x" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>-0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-hand-x" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<x>1</x>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>left-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/left-hand-y" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>-0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<y>1</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<object-name>right-hand</object-name>
+		<type>rotate</type>
+		<property alias="../../params/right-hand-y" />
+		<center>
+			<x-m>19.9871</x-m>
+			<y-m>0.69</y-m>
+			<z-m>1.4306</z-m>
+		</center>
+		<axis>
+			<y>1</y>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>pick</type>
+		<object-name>waldo</object-name>
+		<action>
+			<button>0</button>
+			<repeatable>false</repeatable>
+			<binding>
+				<command>nasal</command>
+				<script alias="../../../../params/toggle-ramp-marshall-script" />
+			</binding>
+		</action>
+	</animation>
+
+</PropertyList>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<PropertyList>
+<path>VHXXroads0000.ac</path>
+<effect>
+<!--
+    EITHER enable the traffic shader
+        <inherits-from>Effects/road-high</inherits-from>
+    OR the lightmap shader
+        <inherits-from>roads</inherits-from>
+-->
+        <inherits-from>Effects/road-high</inherits-from>
+        <object-name>VHXXroads0000</object-name>
+</effect>
+
+<!--
+
+<animation>
+  <type>material</type> 
+  <object-name>VHXXroads0000</object-name>
+  <emission>	
+    <red>0.5</red>
+    <green>0.3</green>
+    <blue>0</blue>
+  </emission>
+</animation>
+-->        
+</PropertyList>

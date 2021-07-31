@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PropertyList>
+	<path>KadoorieBase.ac</path>
+
+<nasal>
+	  <load>
+   if (!contains(globals, "scenery")) globals["scenery"] = {};
+   if (!contains(scenery, "Kadoorie")) scenery["Kadoorie"] = {};
+   if (!contains(scenery.Kadoorie, "KadoorieBase")) scenery.Kadoorie["KadoorieBase"] = {};
+   if (contains(scenery, "sharedDoor")) {
+     scenery.Kadoorie.KadoorieBase[0] =
+       { door :
+       [scenery.sharedDoor.new("/scenery/Kadoorie/KadoorieBase[0]/door[0]", 20),
+	 ]
+       };
+   } else {
+     scenery.Kadoorie.KadoorieBase[0] =
+       { door :
+       [aircraft.door.new("/scenery/Kadoorie/KadoorieBase[0]/door[0]", 20),
+         ]
+       };
+   }
+  </load>
+  <unload>
+   if (contains(scenery, "sharedDoor")) {
+     scenery.Kadoorie.KadoorieBase[0].door[0].destroy();
+   }
+  </unload>
+</nasal>
+<animation>
+  	<type>alpha-test</type>
+  	<alpha-factor>0.01</alpha-factor>
+</animation>
+<animation>
+ <type>pick</type>
+ 	<object-name>Door1</object-name>
+ 	<object-name>Door2</object-name>
+ 	<object-name>Door3</object-name>
+ 	<object-name>Door4</object-name>
+ 	<visible>true</visible>
+ <action>
+  	<name>click</name>
+  	<button>0</button>
+  	<repeatable>false</repeatable>
+  <binding>
+   	<command>nasal</command>
+   	<script>scenery.Kadoorie.KadoorieBase[0].door[0].toggle();</script>
+  </binding>
+ </action>
+</animation>
+
+<animation>
+<type>translate</type>
+<object-name>Door4</object-name>
+<property>/scenery/Kadoorie/KadoorieBase[0]/door[0]/position-norm</property>
+<factor>1</factor>
+<interpolation>
+<entry><ind>0.0</ind><dep>0.00</dep></entry>
+<entry><ind>0.4</ind><dep>0.00</dep></entry>
+<entry><ind>1.0</ind><dep>2.50</dep></entry>
+</interpolation>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>
+<animation>
+<type>translate</type>
+<object-name>Door3</object-name>
+<property>/scenery/Kadoorie/KadoorieBase[0]/door[0]/position-norm</property>
+<factor>1</factor>
+<interpolation>
+<entry><ind>0.0</ind><dep>0.00</dep></entry>
+<entry><ind>0.4</ind><dep>0.00</dep></entry>
+<entry><ind>1.0</ind><dep>5.00</dep></entry>
+</interpolation>
+<axis>
+<x>0</x>
+<y>1</y>
+<z>0</z>
+</axis>
+</animation>
+<animation>
+<type>translate</type>
+<object-name>Door2</object-name>
+<property>/scenery/Kadoorie/KadoorieBase[0]/door[0]/position-norm</property>
+<factor>1</factor>
+<interpolation>
+<entry><ind>0.0</ind><dep>0.00</dep></entry>
+<entry><ind>0.6</ind><dep>5.00</dep></entry>
+<entry><ind>1.0</ind><dep>5.00</dep></entry>
+</interpolation>
+<axis>
+<x>0</x>
+<y>-1</y>
+<z>0</z>
+</axis>
+</animation>
+<animation>
+<type>translate</type>
+<object-name>Door1</object-name>
+<property>/scenery/Kadoorie/KadoorieBase[0]/door[0]/position-norm</property>
+<factor>1</factor>
+<interpolation>
+<entry><ind>0.0</ind><dep>0.00</dep></entry>
+<entry><ind>0.6</ind><dep>2.50</dep></entry>
+<entry><ind>1.0</ind><dep>2.50</dep></entry>
+</interpolation>
+<axis>
+<x>0</x>
+<y>-1</y>
+<z>0</z>
+</axis>
+</animation><model> <path>Models/Airport/windsock.xml</path> <offsets> <x-m>29.90</x-m> <y-m>0.1</y-m> <z-m>-1.5</z-m> <heading-deg>0</heading-deg> </offsets> </model> </PropertyList>

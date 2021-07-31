@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+  <!-- LOWI R26 custom approach lights flash -->
+  <!-- by ot-666 - v_0.5 - 2010.12.08        -->
+
+  <path>approach_strobe.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>strobe10000</object-name>
+  </animation>
+
+  <animation>
+    <type>alpha-test</type>
+    <alpha-factor>0.01</alpha-factor>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>strobe10000</object-name>
+    <condition>
+      <equals>
+      <property>/scenery/VHXX/r13_app_flash/light-number</property>
+      <value>8</value>
+      </equals>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>range</type>
+    <min-m>0</min-m>
+    <max-m>10000</max-m>
+  </animation>
+
+  <animation>
+    <type>dist-scale</type>
+    <object-name>strobe10000</object-name>
+    <interpolation>
+      <entry>
+        <ind>0</ind>
+        <dep>0.2</dep>
+      </entry>
+      <entry>
+        <ind>300</ind>
+        <dep>0.4</dep>
+      </entry>
+      <entry>
+        <ind>1500</ind>
+        <dep>1</dep>
+      </entry>
+      <entry>
+        <ind>4000</ind>
+        <dep>3</dep>
+      </entry>
+      <entry>
+        <ind>10000</ind>
+        <dep>5</dep>
+      </entry>
+    </interpolation>
+  </animation>
+
+</PropertyList>

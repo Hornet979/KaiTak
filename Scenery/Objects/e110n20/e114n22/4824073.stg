@@ -1,0 +1,9 @@
+OBJECT_SHARED Models/Airport/ndb.ac 114.250003 22.214703 275.17 180
+OBJECT_SHARED Models/Airport/ndb.ac 114.288747 22.239758 31.83 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 114.288747 22.238958 31.26 180
+OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 114.2577936 22.1569554 -2.4 0
+OBJECT_SHARED Models/Maritime/Civilian/Lighthouse.xml 114.3029511 22.1819352 -2.4 0
+OBJECT_SHARED Models/Maritime/Misc/Buoy-IsolatedDanger.ac 114.2926667 22.2389167 0 342.44
+OBJECT_SHARED Models/Maritime/Misc/Buoy-Safe-Water.ac 114.27597 22.2337208 -0.12 120.72
+OBJECT_SHARED Models/Maritime/Misc/Buoy-Safe-Water.ac 114.2935871 22.2192687 -0.59 321.09
+OBJECT_SHARED Models/Maritime/Misc/Buoy-Safe-Water.ac 114.3355588 22.2192968 -5.62 288.13

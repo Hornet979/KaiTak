@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<PropertyList>
+
+  <!-- LOWI R26 custom approach lights flash -->
+  <!-- by ot-666 - v_0.5 - 2010.12.08        -->
+
+  <path>approach_strobe.ac</path>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>strobe10000</object-name>
+  </animation>
+
+  <animation>
+    <type>alpha-test</type>
+    <alpha-factor>0.01</alpha-factor>
+  </animation>
+
+</PropertyList>

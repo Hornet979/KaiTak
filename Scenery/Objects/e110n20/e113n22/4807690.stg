@@ -1,0 +1,8 @@
+OBJECT_SHARED Models/Airport/ils.ac 113.547778 22.161389 40.81 34.85
+OBJECT_SHARED Models/Airport/ils.ac 113.595556 22.141111 -0.03 19.16
+OBJECT_SHARED Models/Communications/vordme_1.xml 113.547778 22.161389 40.81 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 113.595556 22.141111 -0.03 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 113.597778 22.135556 -0.03 180
+OBJECT_SHARED Models/Communications/vordme_1.xml 113.615 22.245278 -0.01 180
+OBJECT_SHARED Models/Airport/localizer.xml 113.585833 22.165 -0.1 71.45
+OBJECT_STATIC grand-lisboa.ac 113.5433867 22.1909254 16 92

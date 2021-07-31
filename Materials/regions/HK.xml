@@ -1,0 +1,1145 @@
+<?xml version="1.0"?>
+<PropertyList include="Materials/base/materials-base.xml">
+ <name>Hong Kong</name>
+  <area>
+    <lon1>113.818891</lon1>
+    <lon2>114.387596</lon2>
+    <lat1>22.162296</lat1>
+    <lat2>22.534596</lat2>
+  </area>
+
+  <condition>
+    <equals>
+      <property>sim/startup/season</property>
+      <value>summer</value>
+    </equals>
+  </condition>
+
+  <material>
+    <effect>Effects/crop</effect>
+    <name>IrrCropPastureCover</name>
+    <name>IrrCrop</name>
+    <name>Orchard</name>
+    <name>Olives</name>
+    <name>Vineyard</name>
+    <name>Rice</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/marsh3.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport.png</texture>
+      <texture n="12">Terrain/hkshrubcover/deciduous-hires.png</texture>
+      <texture n="14">Terrain/hkshrubcover/grain_texture.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.8</transition_model>
+   <hires_overlay_bias>0.0</hires_overlay_bias>
+    </parameters>
+
+    <object-mask>Terrain/rice1.mask.png</object-mask>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.3</rolling-friction>
+    <bumpiness>0.6</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <object-group include="Materials/base/farm-buildings.xml"/>
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>
+  </material>
+  
+  <material>
+    <effect>Effects/crop</effect>
+    <name>MixedCropPastureCover</name>
+    <name>MixedCrop</name>
+    <name>ComplexCrop</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/marsh4a.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport.png</texture>
+      <texture n="12">Terrain/hkshrubcover/deciduous-hires.png</texture>
+      <texture n="14">Terrain/grain_texture.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.8</transition_model>
+   <hires_overlay_bias>0</hires_overlay_bias>
+    </parameters>
+    <object-mask>Terrain/rice1.mask.png</object-mask>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <wood-coverage>500</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>
+  </material>
+
+  <material>
+    <name>Grassland</name>
+    <name>DryCropPastureCover</name>
+    <name>DryCrop</name>
+    <name>GreenSpace</name>
+    <name>ShrubCover</name>
+    <name>ShrubGrassCover</name>
+    <name>ScrubCover</name>
+    <name>ScrubSclerophyllous</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/pampas-grass-hires.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport.png</texture>
+      <texture n="12">Terrain/hkshrubcover/deciduous-hires.png</texture>
+      <texture n="14">Terrain/grain_texture.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.8</transition_model>
+   <hires_overlay_bias>0.0</hires_overlay_bias>
+    </parameters>
+
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+  
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>    
+
+  </material>  
+
+  <material>
+    <effect>Effects/agriculture</effect>
+    <tree-effect>Effects/tree-european-deciduous</tree-effect>
+    <name>DeciduousBroadCover</name>
+    <name>DeciduousForest</name>
+    <name>Bog</name>
+    <name>Heath</name>
+    <name>EvergreenBroadCover</name>
+    <name>EvergreenForest</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/deciduous-hires-autumn.png</texture>
+      <texture n="20">Terrain/hkshrubcover/mixedforest-hires-autumn.png</texture>
+    </texture-set>
+    <parameters>
+      <max_overlay_height>2.0</max_overlay_height>
+      <overlay_hardness>0.0</overlay_hardness>
+      <overlay_density>1.0</overlay_density>
+      <overlay_autumn_flag>1</overlay_autumn_flag>
+      <overlay_brightness_top>1.4</overlay_brightness_top>
+      <overlay_brightness_bottom>0.6</overlay_brightness_bottom>
+      <rotation_flag>1</rotation_flag>
+      <rotation_scale>2000.0</rotation_scale>
+    </parameters>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>10000000.0</light-coverage>
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>25.0</tree-height-m>
+    <tree-width-m>15.0</tree-width-m>
+    <rolling-friction>1</rolling-friction>
+    <bumpiness>0.85</bumpiness>
+  </material>
+
+  <material>
+    <name>ShrubCover</name>
+    <name>ShrubGrassCover</name>
+    <name>ScrubCover</name>
+    <name>Scrub</name>
+    <name>Sclerophyllous</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/pampas-grass-hires.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport.png</texture>
+      <texture n="12">Terrain/hkshrubcover/deciduous-hires.png</texture>
+      <texture n="14">Terrain/grain_texture.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+   <transition_model>0.9</transition_model>
+   <hires_overlay_bias>0.0</hires_overlay_bias>
+    </parameters>
+    <object-mask>Terrain/deciduous-hires.png</object-mask>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.7</bumpiness>
+    <load-resistance>1e30</load-resistance>
+  
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>    
+  </material>
+
+<material>
+  <name>BuiltUpCover</name>
+  <name>Urban</name>z
+  <texture-set>
+   <texture>Terrain/hkcity1.png</texture>
+   <texture n="12">Terrain/hkcity2.png</texture>
+  </texture-set>
+   <parameters>
+   <transition_model>0.5</transition_model>
+   </parameters>
+  <xsize>2000</xsize>
+  <ysize>2000</ysize>
+  <light-coverage>100000.0</light-coverage>
+  <emissive>
+   <r>0.05</r>
+   <g>0.05</g>
+   <b>0.02</b>
+   <a>1.0</a>
+  </emissive>
+  <tree-varieties>8</tree-varieties>
+  <tree-height-m>25.0</tree-height-m>
+  <tree-width-m>15.0</tree-width-m>
+</material>
+
+<material>
+  <name>Construction</name>
+  <name>Industrial</name>
+  <name>Transport</name>
+  <name>Port</name>
+   <texture>Terrain/hkport.png</texture>
+  <xsize>300</xsize>
+  <ysize>300</ysize>
+</material>
+
+
+<material>
+    <name>grass_rwy</name>
+    <effect>Effects/airfield</effect>
+    <texture>Runway/grass_rwy.png</texture>
+    <xsize>75</xsize>
+    <ysize>75</ysize>
+    <solid>1</solid>
+    <friction-factor>0.8</friction-factor>
+    <rolling-friction>0.05</rolling-friction>
+    <bumpiness>0.05</bumpiness>
+    <load-resistance>1e5</load-resistance>
+  </material>
+
+  <material>
+    <name>dirt_rwy</name>
+    <effect>Effects/dirt-runway</effect>
+    <texture>Runway/dirt_rwy.png</texture>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.04</rolling-friction>
+    <bumpiness>0.1</bumpiness>
+  </material>
+
+  <material>
+    <name>lakebed_taxiway</name>
+    <texture>Runway/lakebed_taxiway.png</texture>
+    <rolling-friction>0.04</rolling-friction>
+    <bumpiness>0.05</bumpiness>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_taxiway</name>
+    <texture>Runway/hk/pa_taxiway.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tiedown</name>
+    <texture>Runway/hk/pa_tiedown.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_dspl_thresh</name>
+    <texture>Runway/hk/pa_dspl_thresh.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_dspl_arrows</name>
+    <texture>Runway/hk/pa_dspl_arrows.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_shoulder</name>
+    <texture>Runway/hk/pa_shoulder.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_shoulder_f</name>
+    <texture>Runway/hk/pa_shoulder_f1.png</texture>
+    <parameters>
+     <uvstretch>8.0</uvstretch>
+    </parameters>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_threshold</name>
+    <texture>Runway/hk/pa_threshold.png</texture>
+    <wrapu>false</wrapu>
+    <wrapv>false</wrapv>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_no_threshold</name>
+    <texture>Runway/hk/pa_no_threshold.png</texture>
+    <wrapu>false</wrapu>
+    <wrapv>false</wrapv>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_stopway</name>
+    <texture>Runway/hk/pa_stopway.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_L</name>
+    <texture>Runway/hk/pa_L.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_R</name>
+    <texture>Runway/hk/pa_R.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_C</name>
+    <texture>Runway/hk/pa_C.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_0l</name>
+    <texture>Runway/hk/pa_0l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_0r</name>
+    <texture>Runway/hk/pa_0r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_1c</name>
+    <texture>Runway/hk/pa_1c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_1l</name>
+    <texture>Runway/hk/pa_1l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_1r</name>
+    <texture>Runway/hk/pa_1r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_11</name>
+    <texture>Runway/hk/pa_11.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_2c</name>
+    <texture>Runway/hk/pa_2c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_2l</name>
+    <texture>Runway/hk/pa_2l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_2r</name>
+    <texture>Runway/hk/pa_2r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_3c</name>
+    <texture>Runway/hk/pa_3c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_3l</name>
+    <texture>Runway/hk/pa_3l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_3r</name>
+    <texture>Runway/hk/pa_3r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_4c</name>
+    <texture>Runway/hk/pa_4c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_4r</name>
+    <texture>Runway/hk/pa_4r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_5c</name>
+    <texture>Runway/hk/pa_5c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_5r</name>
+    <texture>Runway/hk/pa_5r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_6c</name>
+    <texture>Runway/hk/pa_6c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_6r</name>
+    <texture>Runway/hk/pa_6r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_7c</name>
+    <texture>Runway/hk/pa_7c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_7r</name>
+    <texture>Runway/hk/pa_7r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_8c</name>
+    <texture>Runway/hk/pa_8c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_8r</name>
+    <texture>Runway/hk/pa_8r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_9c</name>
+    <texture>Runway/hk/pa_9c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_9r</name>
+    <texture>Runway/hk/pa_9r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tz_three</name>
+    <texture>Runway/hk/pa_tz_three.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_aim</name>
+    <texture>Runway/hk/pa_aim.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_aim_uk</name>
+    <texture>Runway/hk/pa_aim_uk.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tz_two_a</name>
+    <texture>Runway/hk/pa_tz_two_a.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tz_two_b</name>
+    <texture>Runway/hk/pa_tz_two_b.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tz_one_a</name>
+    <texture>Runway/hk/pa_tz_one_a.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_tz_one_b</name>
+    <texture>Runway/hk/pa_tz_one_b.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_centerline</name>
+    <texture>Runway/hk/pa_centerline.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_rest</name>
+    <texture>Runway/hk/pa_rest.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pa_heli</name>
+    <texture>Runway/hk/pa_helipad.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_taxiway</name>
+    <name>dirt_rwytaxiway</name>
+    <texture>Runway/hk/pa_taxiway.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tiedown</name>
+    <name>dirt_rwytiedown</name>
+    <texture>Runway/hk/pa_tiedown2.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_dspl_thresh</name>
+    <texture>Runway/hk/pa_dspl_thresh.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_dspl_arrows</name>
+    <texture>Runway/hk/pa_dspl_arrows.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_shoulder</name>
+    <texture>Runway/hk/pa_shoulder.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_shoulder_f</name>
+    <texture>Runway/hk/pa_shoulder_f.png</texture>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_threshold</name>
+    <name>dirt_rwythreshold</name>
+    <texture>Runway/hk/pa_threshold.png</texture>
+    <wrapu>false</wrapu>
+    <wrapv>false</wrapv>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_no_threshold</name>
+    <texture>Runway/hk/pa_no_threshold.png</texture>
+    <wrapu>false</wrapu>
+    <wrapv>false</wrapv>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_stopway</name>
+    <texture>Runway/hk/pa_stopway.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_L</name>
+    <name>dirt_rwyL</name>
+    <texture>Runway/hk/pa_L.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_R</name>
+    <name>dirt_rwyR</name>
+    <texture>Runway/hk/pa_R.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_C</name>
+    <name>dirt_rwyC</name>
+    <texture>Runway/hk/pa_C.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_0l</name>
+    <name>dirt_rwy0l</name>
+    <texture>Runway/hk/pa_0l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_0r</name>
+    <name>dirt_rwy0r</name>
+    <texture>Runway/hk/pa_0r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_1c</name>
+    <name>dirt_rwy1c</name>
+    <texture>Runway/hk/pa_1c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_1l</name>
+    <name>dirt_rwy1l</name>
+    <texture>Runway/hk/pa_1l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_1r</name>
+    <name>dirt_rwy1r</name>
+    <texture>Runway/hk/pa_1r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_11</name>
+    <name>dirt_rwy11</name>
+    <texture>Runway/hk/pa_11.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_2c</name>
+    <name>dirt_rwy2c</name>
+    <texture>Runway/hk/pa_2c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_2l</name>
+    <name>dirt_rwy2l</name>
+    <texture>Runway/hk/pa_2l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_2r</name>
+    <name>dirt_rwy2r</name>
+    <texture>Runway/hk/pa_2r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_3c</name>
+    <name>dirt_rwy3c</name>
+    <texture>Runway/hk/pa_3c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_3l</name>
+    <name>dirt_rwy3l</name>
+    <texture>Runway/hk/pa_3l.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_3r</name>
+    <name>dirt_rwy3r</name>
+    <texture>Runway/hk/pa_3r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_4c</name>
+    <name>dirt_rwy4c</name>
+    <texture>Runway/hk/pa_4c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_4r</name>
+    <name>dirt_rwy4r</name>
+    <texture>Runway/hk/pa_4r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_5c</name>
+    <name>dirt_rwy5c</name>
+    <texture>Runway/hk/pa_5c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_5r</name>
+    <name>dirt_rwy5r</name>
+    <texture>Runway/hk/pa_5r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_6c</name>
+    <name>dirt_rwy6c</name>
+    <texture>Runway/hk/pa_6c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_6r</name>
+    <name>dirt_rwy6r</name>
+    <texture>Runway/hk/pa_6r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_7c</name>
+    <name>dirt_rwy7c</name>
+    <texture>Runway/hk/pa_7c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_7r</name>
+    <name>dirt_rwy7r</name>
+    <texture>Runway/hk/pa_7r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_8c</name>
+    <name>dirt_rwy8c</name>
+    <texture>Runway/hk/pa_8c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_8r</name>
+    <name>dirt_rwy8r</name>
+    <texture>Runway/hk/pa_8r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_9c</name>
+    <name>dirt_rwy9c</name>
+    <texture>Runway/hk/pa_9c.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_9r</name>
+    <name>dirt_rwy9r</name>
+    <texture>Runway/hk/pa_9r.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tz_three</name>
+    <name>dirt_rwytz_three</name>
+    <texture>Runway/hk/pa_tz_three.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_aim</name>
+    <name>dirt_rwyaim</name>
+    <texture>Runway/hk/pa_hkaim.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_aim_uk</name>
+    <name>dirt_rwyaim_uk</name>
+    <texture>Runway/hk/pa_aim_uk.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tz_two_a</name>
+    <name>dirt_rwytz_two_a</name>
+    <texture>Runway/hk/pa_tz_two_a.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tz_two_b</name>
+    <name>dirt_rwytz_two_b</name>
+    <texture>Runway/hk/pa_tz_two_b.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tz_one_a</name>
+    <name>dirt_rwytz_one_a</name>
+    <texture>Runway/hk/pa_tz_one_a.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_tz_one_b</name>
+    <name>dirt_rwytz_one_b</name>
+    <texture>Runway/hk/pa_tz_one_b.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_centerline</name>
+    <name>dirt_rwycenterline</name>
+    <texture>Runway/hk/pa_centerline.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_rest</name>
+    <name>dirt_rwyrest</name>
+    <texture>Runway/hk/pa_rest.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/runway_effect.xml">
+    <name>pc_heli</name>
+    <texture>Runway/hk/pa_helipad.png</texture>
+    <wrapu>false</wrapu>
+  </material>
+
+  <material include="Materials/base/rock.xml">
+    <name>BarrenCover</name>
+    <name>Dirt</name>
+    <name>OpenMining</name>
+    <name>Rock</name>
+    <name>Dump</name>
+    <texture>Terrain/hkrock.png</texture>
+  </material>
+
+  <!-- runway and taxiway signs -->
+
+  <material include="Materials/base/glyphs-yellow.xml">
+    <name>YellowSign</name>
+    <texture-set>
+    <texture>Signs/yellow.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.9</r>
+      <g>0.9</g>
+      <b>0.9</b>
+    </emissive>
+    <xsize>4096</xsize>
+    <ysize>128</ysize>
+  </material>
+
+  <material include="Materials/base/glyphs-red.xml">
+    <name>RedSign</name>
+    <texture-set>
+    <texture>Signs/red.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.9</r>
+      <g>0.9</g>
+      <b>0.9</b>
+    </emissive>
+    <xsize>4096</xsize>
+    <ysize>128</ysize>
+  </material>
+
+  <material include="Materials/base/glyphs-black.xml">
+    <name>BlackSign</name>
+    <texture-set>
+    <texture>Signs/black.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.9</r>
+      <g>0.9</g>
+      <b>0.9</b>
+    </emissive>
+    <xsize>4096</xsize>
+    <ysize>128</ysize>
+  </material>
+
+  <material include="Materials/base/glyphs-framed.xml">
+    <name>FramedSign</name>
+    <texture-set>
+    <texture>Signs/framed.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.9</r>
+      <g>0.9</g>
+      <b>0.9</b>
+    </emissive>
+    <xsize>4096</xsize>
+    <ysize>128</ysize>
+  </material>
+
+  <material include="Materials/base/glyphs-special.xml">
+    <name>SpecialSign</name>
+    <texture-set>
+    <texture>Signs/special.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.9</r>
+      <g>0.9</g>
+      <b>0.9</b>
+    </emissive>
+    <xsize>1024</xsize>
+    <ysize>128</ysize>
+  </material>
+
+  <material>
+    <name>UnidirectionalTaper</name>
+    <texture-set>
+    <texture>Symbols/unidirectional.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.92157</r>
+      <g>0.92157</g>
+      <b>0.76471</b>
+      <a>1.0</a>
+    </emissive>
+  </material>
+
+  <material>
+    <name>UnidirectionalTaperRed</name>
+    <texture-set>
+    <texture>Symbols/unidirectionalred.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.92157</r>
+      <g>0.92157</g>
+      <b>0.76471</b>
+      <a>1.0</a>
+    </emissive>
+  </material>
+
+  <material>
+    <name>UnidirectionalTaperGreen</name>
+    <texture-set>
+    <texture>Symbols/unidirectionalgreen.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.92157</r>
+      <g>0.92157</g>
+      <b>0.76471</b>
+      <a>1.0</a>
+    </emissive>
+  </material>
+
+  <material>
+    <name>BidirectionalTaper</name>
+    <texture-set>
+    <texture>Symbols/bidirectional.png</texture>
+    <texture n="13">Terrain/void.png</texture>
+    </texture-set>
+    <emissive>
+      <r>0.92157</r>
+      <g>0.92157</g>
+      <b>0.76471</b>
+      <a>1.0</a>
+    </emissive>
+  </material>
+  
+<material>
+    <name>Grass</name>
+    <name>Airport</name>
+    <name>AirportKeep</name>
+    <name>Greenspace</name>
+  <texture-set>
+      <texture>Terrain/hkairport.png</texture>
+      <texture n="12">Terrain/hkairport2.png</texture>
+  </texture-set>
+   <parameters>
+      <transition_model>0.1</transition_model>
+   </parameters>
+    <xsize>1000</xsize>
+    <ysize>1000</ysize>
+  </material>
+
+  <material>
+    <name>DryCropPastureCover</name>
+    <name>MixedCropPastureCover</name>
+    <name>DryCrop</name>
+    <name>MixedCrop</name>
+    <name>ComplexCrop</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="11">Terrain/hkshrubcover/marsh3.png</texture>
+      <texture n="12">Terrain/hkshrubcover/deciduous-hires-autumn.png</texture>
+      <texture n="13">Terrain/hkshrubcover/deciduous-hires.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+      <hires_overlay_bias>-0.1</hires_overlay_bias>
+    </parameters>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.6</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <light-coverage>2000000.0</light-coverage>
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>
+  </material>
+
+ <material>
+    <name>GrassCover</name>
+    <name>BareTundraCover</name>
+    <name>MixedTundraCover</name>
+    <name>Cemetery</name>
+    <name>HerbTundra</name>
+    <name>HerbTundraCover</name>
+    <effect>Effects/landmass-nowood</effect>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="12">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="13">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>4000000.0</light-coverage>
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>25.0</tree-height-m>
+    <tree-width-m>15.0</tree-width-m>
+    <diffuse>
+      <r>0.93</r>
+      <g>0.95</g>
+      <b>0.93</b>
+      <a>1.0</a>
+    </diffuse>
+    <specular>
+      <r>0.1</r>
+      <g>0.12</g>
+      <b>0.1</b>
+      <a>1.0</a>
+    </specular>
+    <shininess>1.2</shininess>
+    <solid>1</solid>
+    <friction-factor>0.7</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.15</bumpiness>
+    <load-resistance>1e30</load-resistance>
+  </material>
+
+  <material>
+    <name>IrrCropPastureCover</name>
+    <name>IrrCrop</name>
+    <name>Orchard</name>
+    <name>Olives</name>
+    <name>Vineyard</name>
+    <name>Rice</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="12">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="13">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+      <hires_overlay_bias>-0.1</hires_overlay_bias>
+      <transition_model>1.0</transition_model>
+    </parameters>
+    <!--<object-mask>Terrain/rice1.mask.png</object-mask>-->
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <light-coverage>2000000.0</light-coverage>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.3</rolling-friction>
+    <bumpiness>0.6</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <!--<object-group include="Materials/base/farm-buildings.xml"/>-->
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>
+  </material>
+
+  <material>
+    <name>DryCropPastureCover</name>
+    <name>MixedCropPastureCover</name>
+    <name>DryCrop</name>
+    <name>MixedCrop</name>
+    <name>ComplexCrop</name>
+    <texture-set>
+      <texture>Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="11">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="12">Terrain/shkshrubcover/airport_grass2.png</texture>
+      <texture n="13">Terrain/hkshrubcover/airport_grass2.png</texture>
+      <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
+    </texture-set>
+    <parameters>
+      <hires_overlay_bias>-0.1</hires_overlay_bias>
+    </parameters>
+    <xsize>2000</xsize>
+    <ysize>2000</ysize>
+    <solid>1</solid>
+    <friction-factor>0.9</friction-factor>
+    <rolling-friction>0.1</rolling-friction>
+    <bumpiness>0.6</bumpiness>
+    <load-resistance>1e30</load-resistance>
+    <light-coverage>2000000.0</light-coverage>
+    <wood-coverage>5000.0</wood-coverage>
+    <tree-texture>Trees/hk_trees.png</tree-texture>
+    <tree-varieties>8</tree-varieties>
+    <tree-height-m>20.0</tree-height-m>
+    <tree-width-m>12.0</tree-width-m>
+  </material>
+
+</PropertyList>
