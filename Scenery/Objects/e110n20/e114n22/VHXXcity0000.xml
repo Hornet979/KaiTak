@@ -59,9 +59,9 @@
       </greater-than>
     </condition>
     <emission>
-      <red>   1.0 </red>
-      <green> 1.0 </green>
-      <blue>  1.0 </blue>
+      <red>   0.7 </red>
+      <green> 0.7 </green>
+      <blue>  0.7 </blue>
     </emission>
   </animation>
 
@@ -75,9 +75,9 @@
       </less-than-equals>
     </condition>
     <emission>
-      <red>   0.42 </red>
-      <green> 0.42 </green>
-      <blue>  0.42 </blue>
+      <red>   0.0 </red>
+      <green> 0.0 </green>
+      <blue>  0.0 </blue>
     </emission>
   </animation>
 
