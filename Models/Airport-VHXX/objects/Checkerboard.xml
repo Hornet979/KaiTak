@@ -1,32 +1,65 @@
 <?xml version="1.0"?>
+
 <PropertyList>
-<path>Checkerboard.ac</path>
-<effect>
-  <inherits-from>Checkerboard</inherits-from>
-  <object-name>Mesh.1421</object-name>
-</effect>
 
-<!--
+  <path>Checkerboard.ac</path>
+
 <animation>
-  <type>range</type>
-  <min-m>0</min-m>
-  <max-property>/sim/rendering/static-lod/bare</max-property>
-  <object-name>LOD_bare</object-name>
+<name>Day</name>
+<type>material</type>
+    <object-name>Mesh.1421</object-name>
+<condition>
+      <less-than-equals>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </less-than-equals>
+</condition>
+<texture>Checkerboard.png</texture>
 </animation>
 
 <animation>
-  <type>range</type>
-  <min-m>0</min-m>
-  <max-property>/sim/rendering/static-lod/rough</max-property>
-  <object-name>LOD_rough</object-name>
+<name>Night</name>
+<type>material</type>
+    <object-name>Mesh.1421</object-name>
+<condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </greater-than>
+</condition>
+<texture>Checkerboard-lit.png</texture>
 </animation>
 
-<animation>
-  <type>range</type>
-  <min-m>0</min-m>
-  <max-property>/sim/rendering/static-lod/detailed</max-property>
-  <object-name>LOD_detail</object-name>
-</animation>
--->
+  <animation>
+    <type>material</type>
+    <object-name>Mesh.1421</object-name>
+    <condition>
+      <greater-than>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </greater-than>
+    </condition>
+    <emission>
+      <red>   0.7 </red>
+      <green> 0.7 </green>
+      <blue>  0.7 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>Mesh.1421</object-name>
+    <condition>
+      <less-than-equals>
+        <property>/sim/time/sun-angle-rad</property>
+        <value>1.57</value>
+      </less-than-equals>
+    </condition>
+    <emission>
+      <red>   0 </red>
+      <green> 0 </green>
+      <blue>  0 </blue>
+    </emission>
+  </animation>
 
 </PropertyList>
