@@ -3,8 +3,8 @@ MATERIAL "" rgb 1 1 1 amb 1 1 1 emis 0 0 0 spec 0.5 0.5 0.5 shi 64 trans 0
 OBJECT world
 kids 3
 OBJECT poly
-name "LOD_bare"
-texture "Textures/osm2city/VHXX/atlas_facades.png"
+name "building"
+texture "atlas_facades_d6.png"
 numvert 2344
 3297.78 -159.133 3644.75
 3314.85 -159.133 3665.77
@@ -11966,8 +11966,8 @@ refs 15
 2343 0.0004804 0.09336
 kids 0
 OBJECT poly
-name "LOD_rough"
-texture "Textures/osm2city/VHXX/atlas_facades.png"
+name "building"
+texture "atlas_facades_d6.png"
 numvert 18120
 2780.1 -145.55 3617.82
 2766.75 -145.55 3608.83
@@ -104333,8 +104333,8 @@ refs 10
 18119 0.0009451 0.09757
 kids 0
 OBJECT poly
-name "LOD_detail"
-texture "Textures/osm2city/VHXX/atlas_facades.png"
+name "building"
+texture "atlas_facades_d6.png"
 numvert 1754
 2793.22 -145.378 3388.15
 2809.14 -145.378 3389.98
