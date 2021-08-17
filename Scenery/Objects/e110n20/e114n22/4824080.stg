@@ -1425,8 +1425,12 @@ OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m.xml 114.19170121
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m2.xml 114.19185788 22.32785061 11.0184 0.0 0.0 -0.0
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m2.xml 114.19183608 22.32788497 11.1383 0.0 0.0 -0.0
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m.xml 114.19185551 22.32790762 11.1872 0.0 0.0 -0.0
+
 OBJECT_SHARED Models/Airport-VHXX/double/highquality.xml 114.19087673 22.32323929 17.0750 332.0 0.0 -0.0
 OBJECT_SHARED Models/Airport-VHXX/double/doublehappiness.xml 114.19034305 22.32351275 18.5496 332.0 0.0 -0.0
+OBJECT_SHARED Models/Airport-VHXX/double/bl1.xml 114.18952902 22.32384831 4.0687 155.6 0.0 -0.0
+OBJECT_SHARED Models/Airport-VHXX/double/bl3.xml 114.18901416 22.32402549 5.2660 156.0 0.0 -0.0
+
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m.xml 114.19024640 22.32422954 17.7433 0.0 0.0 -0.0
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m2.xml 114.19030845 22.32423416 17.3110 0.0 0.0 -0.0
 OBJECT_SHARED Models/Airport-VHXX/Trees/platanus_acerifolia_15m.xml 114.19033598 22.32424321 17.0890 0.0 0.0 -0.0
