@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <path>Kowloon_lrg.ac</path>
+  <path>b1.ac</path>
 
   <animation>
     <type>range</type>
@@ -10,19 +10,19 @@
     <max-property>sim/rendering/static-lod/bare</max-property>
   </animation>
 	
- <animation> 
+  <animation> 
     <type>textranslate</type> 
     <object-name>jour</object-name> 
     <property>/sim/time/sun-angle-rad</property>
     <step> 1.57 </step>
-    <factor>0</factor>
+    <factor>0.318471338</factor>
     <center>
      <x-m> 0 </x-m>
      <y-m> 0 </y-m>
      <z-m> 0 </z-m>
     </center>
     <axis> 
-      <x>  0 </x> 
+      <x> -1 </x> 
       <y>  0 </y> 
       <z>  0 </z> 
     </axis> 
@@ -38,9 +38,9 @@
       </greater-than>
     </condition>
     <emission>
-      <red>   0.0 </red>
-      <green> 0.0 </green>
-      <blue>  0.0 </blue>
+      <red>   1.0 </red>
+      <green> 1.0 </green>
+      <blue>  1.0 </blue>
     </emission>
   </animation>
 

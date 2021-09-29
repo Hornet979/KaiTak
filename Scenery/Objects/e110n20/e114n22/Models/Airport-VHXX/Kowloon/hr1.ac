@@ -5,7 +5,7 @@ OBJECT world
 name "Blender_export__Salford_BriarHillCourt.ac"
 kids 1
 OBJECT poly
-name "Plane"
+name "building"
 crease 35.0
 texture "hr1.png"
 texrep 1 1
