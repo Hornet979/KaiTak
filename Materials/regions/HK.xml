@@ -1001,6 +1001,13 @@
    </parameters>
     <xsize>1000</xsize>
     <ysize>1000</ysize>
+    <wood-coverage>10.0</wood-coverage>
+    <tree-texture>Trees/grass_blades.png</tree-texture>
+    <tree-varieties>1</tree-varieties>
+    <tree-range-m>200.0</tree-range-m>
+    <tree-height-m>0.3</tree-height-m>
+    <tree-width-m>1.0</tree-width-m> 
+    <tree-effect>Effects/tree-grass</tree-effect>
   </material>
 
   <material>
