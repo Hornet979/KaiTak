@@ -193,7 +193,7 @@
 
 <material>
   <name>BuiltUpCover</name>
-  <name>Urban</name>z
+  <name>Urban</name>
   <texture-set>
    <texture>Terrain/hkcity1.png</texture>
    <texture n="12">Terrain/hkcity2.png</texture>
