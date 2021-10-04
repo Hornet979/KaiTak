@@ -29,7 +29,7 @@
    </parameters>
     <xsize>10000</xsize>
     <ysize>10000</ysize>
-    <wood-coverage>7000.0</wood-coverage>
+    <wood-coverage>100.0</wood-coverage>
     <tree-texture>Trees/grass_blades.png</tree-texture>
     <tree-varieties>1</tree-varieties>
     <tree-range-m>200.0</tree-range-m>
@@ -266,7 +266,7 @@
     <xsize>2000</xsize>
     <ysize>2000</ysize>
     <light-coverage>4000000.0</light-coverage>
-    <wood-coverage>10000.0</wood-coverage>
+    <wood-coverage>7000.0</wood-coverage>
     <tree-texture>Trees/hk_trees.png</tree-texture>
     <tree-varieties>8</tree-varieties>
     <tree-height-m>25.0</tree-height-m>
