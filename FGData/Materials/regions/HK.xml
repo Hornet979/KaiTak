@@ -2,10 +2,10 @@
 <PropertyList include="Materials/base/materials-base.xml">
  <name>Hong Kong</name>
   <area>
-    <lon1>113.818891</lon1>
-    <lon2>114.387596</lon2>
-    <lat1>22.162296</lat1>
-    <lat2>22.534596</lat2>
+    <lon1>113.0</lon1>
+    <lon2>115.0</lon2>
+    <lat1>21.0</lat1>
+    <lat2>23.0</lat2>
   </area>
 
   <condition>
