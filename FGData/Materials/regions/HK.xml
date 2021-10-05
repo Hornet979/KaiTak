@@ -1172,7 +1172,7 @@
     <texture-set>
       <texture>Terrain/hkshrubcover/airport_grass2.png</texture>
       <texture n="11">Terrain/hkshrubcover/airport_grass2.png</texture>
-      <texture n="12">Terrain/shkshrubcover/airport_grass2.png</texture>
+      <texture n="12">Terrain/hkshrubcover/airport_grass2.png</texture>
       <texture n="13">Terrain/hkshrubcover/airport_grass2.png</texture>
       <texture n="15">Terrain/hkshrubcover/airport_grass2.png</texture>
     </texture-set>
