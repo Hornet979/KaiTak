@@ -7,7 +7,7 @@ OBJECT world
 kids 1
 OBJECT poly
 name "LOD_detail"
-texture "buildings.png"
+texture "Textures/osm2city/VHXX/buildings.png"
 numvert 162
 722.365 22.9717 -1622.73
 725.486 22.9717 -1633.88

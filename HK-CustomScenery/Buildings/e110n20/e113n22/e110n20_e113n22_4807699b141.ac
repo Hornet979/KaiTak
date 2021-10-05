@@ -7,7 +7,7 @@ OBJECT world
 kids 1
 OBJECT poly
 name "LOD_rough"
-texture "buildings.png"
+texture "Textures/osm2city/VHXX/buildings.png"
 numvert 1284
 637.858 6.0104 -929.301
 568.86 6.0104 -913.362
