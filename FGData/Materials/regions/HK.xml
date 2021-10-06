@@ -352,7 +352,7 @@
 
   <material include="Materials/base/runway_effect.xml">
     <name>pa_stopway</name>
-    <texture>Runway/hk/pa_stopway.dds</texture>
+    <texture>Runway/hk/pa_stopway.png</texture>
     <wrapu>false</wrapu>
   </material>
 
@@ -629,7 +629,7 @@
 
   <material include="Materials/base/runway_effect.xml">
     <name>pc_stopway</name>
-    <texture>Runway/hk/pa_stopway.dds</texture>
+    <texture>Runway/hk/pa_stopway.png</texture>
     <wrapu>false</wrapu>
   </material>
 

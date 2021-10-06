@@ -85,6 +85,7 @@
 
 <!-- Hong Kong -->
 <region include="Materials/regions/HK.xml"/>
+<region include="Materials/regions/CLK.xml"/>
 
 <!-- street illumination-->
 <region include="Materials/regions/large_cities_illumination.xml"/> 
