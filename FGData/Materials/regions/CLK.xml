@@ -2,10 +2,10 @@
 <PropertyList include="Materials/base/materials-base.xml">
  <name>Chek Lap Kok</name>
   <area>
-    <lon1>113.819830</lon1>
-    <lon2>114.063079</lon2>
-    <lat1>22.185417</lat1>
-    <lat2>22.357982</lat2>
+    <lon1>113.00</lon1>
+    <lon2>114.12</lon2>
+    <lat1>21.00</lat1>
+    <lat2>23.00</lat2>
   </area>
 
   <condition>
@@ -29,16 +29,23 @@
    </parameters>
     <xsize>1000</xsize>
     <ysize>1000</ysize>
+    <wood-coverage>100.0</wood-coverage>
+    <tree-texture>Trees/grass_blades.png</tree-texture>
+    <tree-varieties>1</tree-varieties>
+    <tree-range-m>200.0</tree-range-m>
+    <tree-height-m>0.3</tree-height-m>
+    <tree-width-m>1.0</tree-width-m> 
+    <tree-effect>Effects/tree-grass</tree-effect>
   </material>
 
  <material include="Materials/base/runway_effect.xml">
     <name>pa_taxiway</name>
-    <texture>Runway/pa_taxiway.png</texture>
+    <texture>Runway/hk/pa_taxiway.png</texture>
   </material>
 
   <material include="Materials/base/runway_effect.xml">
     <name>pa_tiedown</name>
-    <texture>Runway/pa_tiedown.png</texture>
+    <texture>Runway/hk/pa_tiedown.png</texture>
   </material>
 
   <material include="Materials/base/runway_effect.xml">

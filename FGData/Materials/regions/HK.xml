@@ -34,7 +34,6 @@
    <transition_model>0.8</transition_model>
    <hires_overlay_bias>0.0</hires_overlay_bias>
     </parameters>
-
     <object-mask>Terrain/rice1.mask.png</object-mask>
     <xsize>2000</xsize>
     <ysize>2000</ysize>
@@ -44,7 +43,7 @@
     <rolling-friction>0.3</rolling-friction>
     <bumpiness>0.6</bumpiness>
     <load-resistance>1e30</load-resistance>
-    <object-group include="Materials/base/farm-buildings.xml"/>
+    <!--<object-group include="Materials/base/farm-buildings.xml"/>-->
     <wood-coverage>50000.0</wood-coverage>
     <tree-texture>Trees/hk_trees.png</tree-texture>
     <tree-varieties>8</tree-varieties>
@@ -57,23 +56,9 @@
     <name>SomeSort</name>
     <name>Island</name>
     <name>Default</name>
-    <name>EvergreenBroadCover</name>
-    <name>EvergreenForest</name>
     <name>EvergreenNeedleCover</name>
     <name>WoodedTundraCover</name>
     <name>DeciduousNeedleCover</name>
-    <name>DeciduousBroadCover</name>
-    <name>DeciduousForest</name>
-    <name>Bog</name>
-    <name>Heath</name>
-    <name>MixedForestCover</name>
-    <name>MixedForest</name>
-    <name>RainForest</name>
-    <name>ShrubCover</name>
-    <name>ShrubGrassCover</name>
-    <name>ScrubCover</name>
-    <name>Scrub</name>
-    <name>Sclerophyllous</name>
     <texture-set>
       <texture>Terrain/hkshrubcover/hk_forest.png</texture>
       <texture n="12">Terrain/hkshrubcover/airport_grass2.png</texture>
@@ -90,8 +75,8 @@
     <rolling-friction>0.3</rolling-friction>
     <bumpiness>0.6</bumpiness>
     <load-resistance>1e30</load-resistance>
-    <object-group include="Materials/base/farm-buildings.xml"/>
-    <wood-coverage>12000.0</wood-coverage>
+    <!--<object-group include="Materials/base/farm-buildings.xml"/>-->
+    <wood-coverage>7000.0</wood-coverage>
     <tree-texture>Trees/hk_trees.png</tree-texture>
     <tree-varieties>8</tree-varieties>
     <tree-height-m>20.0</tree-height-m>
@@ -176,6 +161,8 @@
     <name>Heath</name>
     <name>EvergreenBroadCover</name>
     <name>EvergreenForest</name>
+    <name>MixedForestCover</name>
+    <name>MixedForest</name>
     <texture-set>
       <texture>Terrain/hkshrubcover/deciduous-hires-autumn.png</texture>
       <texture n="20">Terrain/hkshrubcover/mixedforest-hires-autumn.png</texture>
@@ -1104,7 +1091,7 @@
     <xsize>2000</xsize>
     <ysize>2000</ysize>
     <light-coverage>4000000.0</light-coverage>
-    <wood-coverage>7000.0</wood-coverage>
+    <wood-coverage>10000.0</wood-coverage>
     <tree-texture>Trees/hk_trees.png</tree-texture>
     <tree-varieties>8</tree-varieties>
     <tree-height-m>25.0</tree-height-m>
