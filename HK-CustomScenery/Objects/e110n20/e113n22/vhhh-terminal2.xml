@@ -62,4 +62,10 @@
     </emission>
   </animation>
 
+<!-- Shaders -->
+	<effect>
+		<inherits-from>Effects/window</inherits-from>
+                <object-name>building</object-name>
+	</effect>
+
 </PropertyList>
