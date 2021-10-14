@@ -43,6 +43,8 @@
 
 <!-- Asia -->
 <region include="Materials/regions/asia.xml"/>
+<region include="Materials/regions/VOCL.xml"/>
+<region include="Materials/regions/VABB.xml"/>
 
 <!-- Pacific-->
 <region include="Materials/regions/indonesia.xml"/>
@@ -83,9 +85,21 @@
 <!-- Oceania -->
 <region include="Materials/regions/oceania.xml"/>
 
+<!-- Australia -->
+<region include="Materials/regions/australia.xml"/>
+<region include="Materials/regions/australia_south_east.xml"/>
+<region include="Materials/regions/australia_south_west.xml"/>
+<region include="Materials/regions/australia_top_end.xml"/>
+
+<!-- Ecuador -->
+<region include="Materials/regions/quito.xml"/>
+
+<!-- Japan -->
+<region include="Materials/regions/fukuoka.xml"/>
+
 <!-- Hong Kong -->
 <region include="Materials/regions/HK.xml"/>
-<region include="Materials/regions/CLK.xml"/>
+<region include="Materials/regions/KT.xml"/>
 
 <!-- street illumination-->
 <region include="Materials/regions/large_cities_illumination.xml"/> 
