@@ -1,14 +1,16 @@
 <?xml version="1.0"?>
-<rwyuse> 
-  <com> 
+<rwyuse>
+  <com>
+    <wind tail="7"
+          cross="20" />
     <time start ="00:00"
           end   ="24:00"
           schedule = "day"/>
-  </com> 
+  </com>
 
 <!-- commercial schedule -->
 <schedule name="day">
-  <takeoff>25R</takeoff>
-  <landing>25L</landing> 
+  <takeoff>7R, 25L</takeoff>
+  <landing>7L, 7R, 25L, 25R</landing>
 </schedule>
 </rwyuse>

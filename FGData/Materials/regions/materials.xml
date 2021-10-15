@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!-- FlightGear Materials File. See Docs/README.materials for details. -->
+
+<PropertyList>
+
+<!-- Base materials -->
+<region include="Materials/regions/global.xml"/>
+<region include="Materials/regions/global-summer.xml"/>
+<region include="Materials/regions/global-winter.xml"/>
+
+<!-- Arctic and Antarctic Regions -->
+<region include="Materials/regions/arctic.xml"/>
+<region include="Materials/regions/greenland.xml"/>
+<region include="Materials/regions/north_atlantic_islands.xml"/>
+<region include="Materials/regions/jan_mayen.xml"/>
+
+<!-- North America -->
+<region include="Materials/regions/alaska.xml"/>
+<region include="Materials/regions/us_southwest.xml"/> 
+<region include="Materials/regions/california.xml"/>
+<region include="Materials/regions/sierras.xml"/>
+<region include="Materials/regions/florida.xml"/>
+<region include="Materials/regions/bermuda.xml"/>
+
+<!-- South America -->
+<region include="Materials/regions/tropical_south_america.xml"/>
+<region include="Materials/regions/latin_american_cities.xml"/>
+<region include="Materials/regions/ascension.xml"/>
+<region include="Materials/regions/mexico.xml"/>
+<region include="Materials/regions/brazil_amazon_forest.xml"/>
+<region include="Materials/regions/brazil_mata_atlantica.xml"/>
+<region include="Materials/regions/brazil_manaus.xml"/>
+<region include="Materials/regions/brazil_cerrado.xml"/>
+<region include="Materials/regions/brazil_brasilia.xml"/>
+<region include="Materials/regions/brazil_southern_cerrado.xml"/>
+<region include="Materials/regions/brazil_pantanal.xml"/>
+<region include="Materials/regions/brazil_pampas.xml"/>
+<region include="Materials/regions/brazil_lencois.xml"/>
+<region include="Materials/regions/brazil_caatinga.xml"/>
+<region include="Materials/regions/brazil_chapada_diamantina.xml"/>
+<region include="Materials/regions/caribbean.xml"/>
+<region include="Materials/regions/rio_de_janeiro.xml"/>
+
+<!-- Asia -->
+<region include="Materials/regions/asia.xml"/>
+<region include="Materials/regions/VOCL.xml"/>
+<region include="Materials/regions/VABB.xml"/>
+
+<!-- Pacific-->
+<region include="Materials/regions/indonesia.xml"/>
+<region include="Materials/regions/southeast_asia.xml"/>
+<region include="Materials/regions/hawaii.xml"/>
+<region include="Materials/regions/oahu.xml"/>
+<region include="Materials/regions/hawaii_big_island.xml"/>
+<region include="Materials/regions/kauai.xml"/>
+
+<!-- Africa -->
+<region include="Materials/regions/africa_savanna.xml"/>
+<region include="Materials/regions/africa_desert.xml"/>
+<region include="Materials/regions/africa_rainforest.xml"/>
+<region include="Materials/regions/africa_mediterranean.xml"/>
+<region include="Materials/regions/africa_kilimanjaro.xml"/>
+<region include="Materials/regions/mediterranean_cities.xml"/>
+<region include="Materials/regions/south_africa.xml"/>
+<region include="Materials/regions/madagascar.xml"/>
+
+<!-- Europe -->
+<region include="Materials/regions/europe.xml"/>
+<region include="Materials/regions/europe-winter.xml"/>
+<region include="Materials/regions/scandinavia.xml"/>
+<region include="Materials/regions/united_kingdom.xml"/>
+<region include="Materials/regions/united_kingdom_barra.xml"/>
+<region include="Materials/regions/ireland.xml"/>
+<region include="Materials/regions/iceland.xml"/>
+<region include="Materials/regions/norway.xml"/>
+<region include="Materials/regions/southern_europe.xml"/>
+<region include="Materials/regions/corse.xml"/>
+<region include="Materials/regions/azores.xml"/>
+
+<!-- Middle East-->
+<region include="Materials/regions/middle_east.xml"/>
+<region include="Materials/regions/middle_east_large_cities.xml"/> 
+<region include="Materials/regions/UAE.xml"/>
+
+<!-- Oceania -->
+<region include="Materials/regions/oceania.xml"/>
+
+<!-- Australia -->
+<region include="Materials/regions/australia.xml"/>
+<region include="Materials/regions/australia_south_east.xml"/>
+<region include="Materials/regions/australia_south_west.xml"/>
+<region include="Materials/regions/australia_top_end.xml"/>
+
+<!-- Ecuador -->
+<region include="Materials/regions/quito.xml"/>
+
+<!-- Japan -->
+<region include="Materials/regions/fukuoka.xml"/>
+
+<!-- Hong Kong -->
+<region include="Materials/regions/HK.xml"/>
+<region include="Materials/regions/KT.xml"/>
+
+<!-- street illumination-->
+<region include="Materials/regions/large_cities_illumination.xml"/> 
+<region include="Materials/regions/mega_cities_illumination.xml"/> 
+
+</PropertyList>
