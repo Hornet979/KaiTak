@@ -2,10 +2,10 @@
 <PropertyList>
   <runway>
     <ils>
-      <lon>114.184505</lon>
-      <lat>22.332125</lat>
+      <lon>114.18501389</lon>
+      <lat>22.33241111</lat>
       <rwy>13</rwy>
-      <hdg-deg>88.00</hdg-deg>
+      <hdg-deg>89.00</hdg-deg>
       <elev-m>98</elev-m>
       <nav-id>KL</nav-id>
     </ils>
