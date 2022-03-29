@@ -1,0 +1,14 @@
+I
+810 Version - data 2021.04 ©2021 Jean-Paul Anceaux (www2@worldwideweb2.nl) This data is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program ("AptNavGNULicence.txt"); if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+
+4  22.33241111  114.18501389    104 11190  18      86.000 KL   VHXX 13  IGS
+4  22.32609800  114.19123000     15 10990  18     314.166 IHK  VHXX 31  ILS-cat-I
+6  22.33521300  114.18409000    329 11190  18  310086.000 KL   VHXX 13  GS
+6  22.30665800  114.21197900     15 10990  18  300314.253 IHK  VHXX 31  GS
+7  22.33089200  114.10523600     93     0   0      86.000 ---- VHXX 13  OM
+7  22.23895800  114.28874700    191     0   0     134.000 ---- VHXX 31  OM
+8  22.32995400  114.16857100    256     0   0      86.000 ---- VHXX 13  MM
+8  22.33142200  114.16998600    144     0   0     134.000 ---- VHXX 31  MM
+12  22.33241111  114.18501389    104 11190  18       1.206 KL   VHXX 13  DME-ILS
+12  22.3066580   114.21197900     15 11190  18       0.000 KL   VHXX 31  DME-ILS
+99
