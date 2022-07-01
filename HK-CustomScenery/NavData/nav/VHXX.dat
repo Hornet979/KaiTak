@@ -1,14 +1,26 @@
 I
 810 Version - data 2021.04 ©2021 Jean-Paul Anceaux (www2@worldwideweb2.nl) This data is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.  This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.  You should have received a copy of the GNU General Public License along with this program ("AptNavGNULicence.txt"); if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 
+2  22.21470280  114.25000280    907   338 500    0.0 HKG  CAPE D AGUILAR NDB
+2  22.20150280  114.02648060    247   360  50    0.0 CC   CHEUNG CHAU NDB
+2  22.32647500  114.19116940      9   377  50    0.0 RW   HONG KONG NDB
+2  22.29097500  113.90694720    400   268  50    0.0 SL   SHA LO WAN NDB
+2  22.31996390  114.13221670    213   236  50    0.0 SC   STONECUTTERS NDB
+2  22.23921110  114.28767500     96   280  50    0.0 TP   TATHONG POINT NDB
+3  22.21954166  114.03005555    3   28 11230 190   -1.0 CH   CHEUNG CHAU VOR-DME
+3  22.23895800  114.28874700    188 11550 200   -2.0 TH   TATHONG POINT VOR-DME
+3  22.24789444  114.29313888    806 11610 190   -1.0 TD   TUNG LUNG VOR-DME
 4  22.33241111  114.18501389    104 11190  18      86.000 KL   VHXX 13  IGS
-4  22.32609800  114.19123000     15 10990  18     314.166 IHK  VHXX 31  ILS-cat-I
+4  22.32609800  114.19123000     15 10990  18     314.166 IHK  VHXX 31  ILS-CAT-I
 6  22.33521300  114.18409000    329 11190  18  310086.000 KL   VHXX 13  GS
 6  22.30665800  114.21197900     15 10990  18  300314.253 IHK  VHXX 31  GS
-7  22.33089200  114.10523600     93     0   0      86.000 ---- VHXX 13  OM
-7  22.23895800  114.28874700    191     0   0     134.000 ---- VHXX 31  OM
-8  22.32995400  114.16857100    256     0   0      86.000 ---- VHXX 13  MM
-8  22.28194400  114.23611100    144     0   0     134.000 ---- VHXX 31  MM
+7  22.32835000  114.10555000     24     0   0      86.000 ---- VHXX 13  OM
+7  22.23931670  114.28778888     95     0   0     134.000 ---- VHXX 31  OM
+8  22.33170833  114.16971111    256     0   0      40.000 ---- VHXX 13  MM
+8  22.28170830  114.23606944    185     0   0     134.000 ---- VHXX 31  MM
+12  22.21991400  114.03020800    328 11230 190    0.0 CH   CHEUNG CHAU VOR-DME
+12  22.23895833  114.28874722    188 11550 118    0.0 TH   TATHONG POINT VOR-DME
+12  22.24789444  114.29313888    806 11230 190    0.0 TD   TUNG LUNG VOR-DME
 12  22.33241111  114.18501389    104 11190  18       1.206 KL   VHXX 13  DME-ILS
 12  22.3066580   114.21197900     15 11190  18       0.000 KL   VHXX 31  DME-ILS
 99
