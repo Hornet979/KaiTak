@@ -16,41 +16,43 @@
   <object-name>LOD_rough</object-name>
 </animation>
 
-<animation>
-  <type>range</type>
-  <min-m>0</min-m>
-  <max-property>/sim/rendering/static-lod/detailed</max-property>
-  <object-name>LOD_detail</object-name>
-</animation>
+<!--night lighting-->
+
 <animation>
 <name>Day</name>
 <type>material</type>
     <object-name>building</object-name>
+    <object-name>building.001</object-name>
+    <object-name>building.002</object-name>
 <condition>
       <less-than-equals>
         <property>/sim/time/sun-angle-rad</property>
         <value>1.57</value>
       </less-than-equals>
 </condition>
-<texture>atlas_facades_d2.png</texture>
+<texture>atlas_facades.png</texture>
 </animation>
 
 <animation>
 <name>Night</name>
 <type>material</type>
     <object-name>building</object-name>
+    <object-name>building.001</object-name>
+    <object-name>building.002</object-name>
 <condition>
       <greater-than>
         <property>/sim/time/sun-angle-rad</property>
         <value>1.57</value>
       </greater-than>
 </condition>
-<texture>atlas_facades3.png</texture>
+<texture>atlas_facades_night2.png</texture>
 </animation>
 
   <animation>
     <type>material</type>
     <object-name>building</object-name>
+    <object-name>building.001</object-name>
+    <object-name>building.002</object-name>
     <condition>
       <greater-than>
         <property>/sim/time/sun-angle-rad</property>
@@ -67,6 +69,8 @@
   <animation>
     <type>material</type>
     <object-name>building</object-name>
+    <object-name>building.001</object-name>
+    <object-name>building.002</object-name>
     <condition>
       <less-than-equals>
         <property>/sim/time/sun-angle-rad</property>
